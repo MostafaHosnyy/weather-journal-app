@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Journal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L21.8,85.3C43.6,107,87,149,131,144C174.5,139,218,85,262,106.7C305.5,128,349,224,393,229.3C436.4,235,480,149,524,133.3C567.3,117,611,171,655,176C698.2,181,742,139,785,117.3C829.1,96,873,96,916,106.7C960,117,1004,139,1047,165.3C1090.9,192,1135,224,1178,218.7C1221.8,213,1265,171,1309,138.7C1352.7,107,1396,85,1418,74.7L1440,64L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>    
+     </section>
+    <div id="app">
+      <div class="holder headline">WEATHER JOURNAl  APP</div>
+      <div class="holder zip">
+        <label for="zip">Enter ZipCode Here</label>
+        <input type="text" id="zip" placeholder="enter zipcode here" />
+      </div>
+      <div class="holder feel">
+        <label for="feelings">How Are You Feeling Today?</label>
+        <textarea
+          class="myInput"
+          id="feelings"
+          placeholder="Enter your feelings here"
+          rows="9"
+          cols="50"
+        ></textarea>
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div class="holder entry">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder">
+          <div id="temp">Temperature: </div>
+          <div id="date">Current Date: </div>
+          <div id="content">Feeling</div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg,#0099ff, #444,#fff);
+  background-size: 250% 150%;
+}
+section{
+  height: 100px;
+}
+#app {
+  display: grid;
+  grid-auto-rows: auto;
+  color: #a3d9ff;
+  justify-content: center;
+  grid-gap: 0.5em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+  justify-items: center;
+  padding: 0 2em 0em 2em;
+}
+
+.holder {
+  display: grid;
+  justify-items: center;
+}
+
+#entryHolder {
+  display: block;
+  width: 400px;
+  margin: 5px 0 20px 0 ;
+  background-color: #2c6185;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px 8px;
+}
+
+.headline {
+  font-size: clamp(1rem, 5vw, 6rem);
+  color: #ff9177;
+}
+.title {
+  display: block;
+  font-size: 27px;
+}
+#content{
+  text-align: center;
+  color: #ff9177;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 27px;
+}
+
+input {
+  display: block;
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: #2c6185;
+  border-radius: 6px;
+  border-style: none;
+  box-shadow: 0px 0px 1px rgb(0 0 0 / 12%) inset;
+  color: rgb(44, 44, 44);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 5px 8px;
+  transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -moz-transition: background-color 0.3s ease 0s;
+  -ms-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+}
+
+button {
+background-image: linear-gradient( to top, #0099ff 0%, #a2d9ff 100%);
+color: #fff;
+font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+border-radius: 4px;
+  padding: 14px 32px;
+  margin-top: 2rem;
+  border-radius: 6px;
+  transition: all 0.35s;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* position: relative; */
+button:hover {
+  color: #2c6185;
+  outline: none;
+  background-image: linear-gradient( to top, #ff9177 0%, #a2d9ff 100%);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+textarea {
+  margin-top: 10px;
+  width: clamp(200px, 350px, 500px);
+  height: 50px;
+  background-color: #2c6185;
+  border-radius: 6px;
+  border-style: none;
+  box-shadow: 0px 0px 1px rgb(0 0 0 / 12%) inset;
+  color: rgb(44, 44, 44);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 5px 8px;
+}
+
+textarea:focus,
+input:focus {
+  background-color: #a2d9ff;
+  box-shadow: 0px 0px 4px 2px rgb(0 0 0 / 12%);
+  outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+  color: #fff; 
+  font-family: 'Oswald', sans-serif;
+
+} 
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+  color: #fff; 
+  font-family: 'Oswald', sans-serif;
+
+} 
+
+::-ms-input-placeholder { /* Microsoft Edge */ 
+  color: #fff; 
+  font-family: 'Oswald', sans-serif;
+
+} 
+
+
